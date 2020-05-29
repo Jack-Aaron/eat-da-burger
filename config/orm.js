@@ -1,20 +1,14 @@
 var connection = require("./connection.js");
 
 var orm = {
-  selectAll: function (tableInput, colToSearch, valOfCol) {
-    var queryString = "SELECT * FROM ?? WHERE ?? = ?";
-    connection.query(queryString, [tableInput, colToSearch, valOfCol], function (err, result) {
-      if (err) throw err;
-      console.log(result);
-    });
+  selectAll: function (tableInput, cb) {
+    var queryString = "SELECT * FROM ??";
+    connection.query(queryString, [tableInput], cb)
   },
-  insertOne: function (whatToSelect, table, orderCol) {
-    var queryString = "SELECT ?? FROM ?? ORDER BY ?? DESC";
+  insertOne: function (whatToInsert, table, orderCol) {
+    var queryString = "INSERT INTO ?? SET ?? = ?";
     console.log(queryString);
-    connection.query(queryString, [whatToSelect, table, orderCol], function (err, result) {
-      if (err) throw err;
-      console.log(result);
-    });
+    connection.query(queryString, [whatToInsert, table, orderCol], cb)
   },
   updateOne: function (tableOneCol, tableTwoForeignKey, tableOne, tableTwo) {
     var queryString =

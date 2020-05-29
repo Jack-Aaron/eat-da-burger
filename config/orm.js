@@ -10,18 +10,12 @@ var orm = {
     console.log(queryString);
     connection.query(queryString, [whatToInsert, table, orderCol], cb)
   },
-  updateOne: function (tableOneCol, tableTwoForeignKey, tableOne, tableTwo) {
+  updateOne: function (whatToUpdate, table, condition) {
     var queryString =
-      "SELECT ??, COUNT(??) AS count FROM ?? LEFT JOIN ?? ON ??.??= ??.id GROUP BY ?? ORDER BY count DESC LIMIT 1";
-
+      "UPDATE ?? SET ?? WHERE ?? = ?";
     connection.query(
       queryString,
-      [tableOneCol, tableOneCol, tableOne, tableTwo, tableTwo, tableTwoForeignKey, tableOne, tableOneCol],
-      function (err, result) {
-        if (err) throw err;
-        console.log(result);
-      }
-    );
+      [whatToUpdate, table, condition], cb);
   }
 };
 

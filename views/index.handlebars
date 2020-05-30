@@ -4,12 +4,12 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
-      {{!-- {{> cats/cat-block devoured=true}} --}}
-      <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		DEVOUR
-	</button>
-    {{/unless}}
+  {{#unless devoured}}
+  {{this.id}} - {{this.burger_name}}
+  <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+    DEVOUR
+  </button>
+  {{/unless}}
   {{/each}}
 </ul>
 
@@ -17,9 +17,11 @@
 
 <ul>
   {{#each burgers}}
-    {{#if devoured}}
-      {{!-- {{> cats/cat-block devoured=false}} --}}
-    {{/if}}
+  {{#if devoured}}
+  {{this.id}} - {{this.burger_name}}
+  <button type="button" class="devoured-burger btn btn-danger" id="devoured-button" data-id="{{this.id}}"
+    data-newdevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+  {{/if}}
   {{/each}}
 </ul>
 

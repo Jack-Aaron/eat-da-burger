@@ -1,0 +1,71 @@
+html {
+    font-size: calc(0.5em + 0.75vw);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #89371F;
+}
+
+img {
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #D97003;
+    padding-bottom: 1em;
+    letter-spacing: 0.1em;
+}
+
+section {
+    border: dashed 3px #DD2A1B;
+}
+
+p, ul, label {
+    color: #97AE00;
+    padding: 1em;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 0.25em;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+li:before { /* https://stackoverflow.com/questions/22179094/list-style-image-svg-smaller-in-webkit */
+    content:''; 
+    display:inline-block; 
+    height:1em; 
+    width:1em; 
+    background-image:url('/assets/img/burger-bullet.svg');
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    padding-left: 1em; 
+}
+
+.create-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #DD2A1B;
+    color: #97AE00;
+}

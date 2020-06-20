@@ -26,4 +26,4 @@ This application uses Handlebars formatting, MySQL databases and Heroku cloud ho
 ```npm i mysql```<br>
 
 ### Meet The Team
-[Jonathan Alpart](https://github.com/Jack-Aaron): Front end/Back end
+[Jonathan Alpart](https://github.com/Jack-Aaron): Front-end/Back-end

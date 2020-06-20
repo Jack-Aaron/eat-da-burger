@@ -17,6 +17,10 @@ This application uses Handlebars formatting, MySQL databases and Heroku cloud ho
 ### Links
 * [Application](https://secret-garden-89834.herokuapp.com/)
 
+### Future Improvements
+* improve button design
+* limit overflow when too many items are added
+
 ### Installation 
 ```npm i express```<br>
 ```npm i express-handlebars```<br>

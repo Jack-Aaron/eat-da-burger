@@ -20,6 +20,3 @@ This application uses Handlebars formatting, MySQL databases and Heroku cloud ho
 ### Future Improvements
 * improve button design
 * limit overflow when too many items are added
-
-### Meet The Team
-[Jonathan Alpart](https://github.com/Jack-Aaron): Front-end/Back-end

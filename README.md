@@ -21,13 +21,5 @@ This application uses Handlebars formatting, MySQL databases and Heroku cloud ho
 * improve button design
 * limit overflow when too many items are added
 
-### Installation 
-```npm i express```<br>
-```npm i express-handlebars```<br>
-```npm i nodemon```<br>
-```npm i heroku```<br>
-```npm i path```<br>
-```npm i mysql```<br>
-
 ### Meet The Team
 [Jonathan Alpart](https://github.com/Jack-Aaron): Front-end/Back-end
